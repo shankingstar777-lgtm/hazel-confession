@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-hazel-50 text-letter-ink;
+  }
+}
+
+@layer components {
+  .letter-paper {
+    @apply bg-letter-parchment bg-paper-texture rounded-lg shadow-xl p-6 md:p-8 max-w-2xl mx-auto border border-hazel-200;
+  }
+  
+  .music-player {
+    backdrop-filter: blur(10px);
+    background: rgba(244, 222, 147, 0.1);
+    border: 1px solid rgba(212, 160, 33, 0.2);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-hazel-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-hazel-400 rounded-full;
+}
